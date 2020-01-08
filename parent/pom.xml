@@ -17,8 +17,30 @@
     <modules>
         <module>hankli-consumer</module>
         <module>hankli-producer</module>
+        <module>hankli-consumer-fegin</module>
+        <module>hankli-consumer-webflux</module>
     </modules>
     <packaging>pom</packaging>
+
+    <!--依赖版本定义-->
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>Greenwich.RELEASE</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-alibaba-dependencies</artifactId>
+                <version>0.2.1.RELEASE</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 
 
 </project>
