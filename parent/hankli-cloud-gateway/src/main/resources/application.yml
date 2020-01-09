@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: nacos-cloud-gateway
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+
+    gateway:
+      routes:
+        - id: nacos-producer  #随便写，保证唯一就行
+          uri: lb://nacos-discovery-producer  #使用lb，表示从注册中心进行拉取
+          predicates:
+            - Path=/nacos-producer/**
+          filters:
+            - StripPrefix=1  #这里的作用是拦截请求后转发的地址去掉一个(nacos-producer)这样的前缀
+
+
+
+server:
+  port: 8055

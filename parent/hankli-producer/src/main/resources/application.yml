@@ -3,7 +3,8 @@ spring:
     name: nacos-discovery-producer
   cloud:
     nacos:
-      server-addr: http://localhost:8848
+      discovery:
+        server-addr: localhost:8848
 
 server:
   port: 8060

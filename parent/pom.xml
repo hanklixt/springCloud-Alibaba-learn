@@ -19,6 +19,7 @@
         <module>hankli-producer</module>
         <module>hankli-consumer-fegin</module>
         <module>hankli-consumer-webflux</module>
+		<module>hankli-cloud-gateway</module>
     </modules>
     <packaging>pom</packaging>
 
