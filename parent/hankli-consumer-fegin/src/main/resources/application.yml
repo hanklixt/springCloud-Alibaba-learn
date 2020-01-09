@@ -1,6 +1,6 @@
 spring:
   application:
-    name: nacos-discovery-consumer-fegin
+    name: nacos-discovery-nacosclient-fegin
   cloud:
     nacos:
       discovery:

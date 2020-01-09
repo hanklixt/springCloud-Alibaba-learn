@@ -20,6 +20,7 @@
         <module>hankli-consumer-fegin</module>
         <module>hankli-consumer-webflux</module>
 		<module>hankli-cloud-gateway</module>
+		<module>hankli-nacos-config-client</module>
     </modules>
     <packaging>pom</packaging>
 

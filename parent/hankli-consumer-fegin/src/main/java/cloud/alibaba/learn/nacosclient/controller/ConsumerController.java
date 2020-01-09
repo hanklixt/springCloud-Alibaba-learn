@@ -1,6 +1,6 @@
-package cloud.alibaba.learn.consumer.controller;
+package cloud.alibaba.learn.nacosclient.controller;
 
-import cloud.alibaba.learn.consumer.client.FeginClientDemo;
+import cloud.alibaba.learn.nacosclient.client.FeginClientDemo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;

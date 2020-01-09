@@ -1,6 +1,6 @@
 spring:
   application:
-    name: nacos-discovery-consumer-webflux
+    name: nacos-discovery-nacosclient-webflux
   cloud:
     nacos:
       discovery:

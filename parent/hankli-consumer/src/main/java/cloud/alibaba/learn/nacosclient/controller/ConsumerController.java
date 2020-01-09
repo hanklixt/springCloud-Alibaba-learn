@@ -1,4 +1,4 @@
-package cloud.alibaba.learn.consumer.controller;
+package cloud.alibaba.learn.nacosclient.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.client.loadbalancer.LoadBalancerClient;

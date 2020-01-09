@@ -1,4 +1,4 @@
-package cloud.alibaba.learn.consumer.controller;
+package cloud.alibaba.learn.nacosclient.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
