@@ -22,6 +22,7 @@
 		<module>hankli-cloud-gateway</module>
 		<module>hankli-nacos-config-client</module>
 		<module>hankli-nacos-config-client-load</module>
+        <module>sentinel-core-example</module>
     </modules>
     <packaging>pom</packaging>
 
