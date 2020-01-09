@@ -21,6 +21,7 @@
         <module>hankli-consumer-webflux</module>
 		<module>hankli-cloud-gateway</module>
 		<module>hankli-nacos-config-client</module>
+		<module>hankli-nacos-config-client-load</module>
     </modules>
     <packaging>pom</packaging>
 

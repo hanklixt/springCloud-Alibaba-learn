@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: nacos-config-client
+  cloud:
+    nacos:
+      config:
+        server-addr: localhost:8848
+  #        file-extension: yml     #默认是properties
+  profiles:
+    active: dev    #根据官网文档，默认拉取的文件为 ${spring.application.name}-${spring.profiles.active}-${file-extension}
+server:
+  port: 8057
+
