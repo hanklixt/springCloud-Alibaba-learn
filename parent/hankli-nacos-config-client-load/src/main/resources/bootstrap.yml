@@ -5,9 +5,17 @@ spring:
     nacos:
       config:
         server-addr: localhost:8848
+        namespace: ee74d28b-0cf7-44a5-bf7e-abace6a536a3
+        group: px
+        ext-config:
+          - dataId: common.properties
+            group: px
+            refresh: true
+
+
   #        file-extension: yml     #默认是properties
-  profiles:
-    active: dev    #根据官网文档，默认拉取的文件为 ${spring.application.name}-${spring.profiles.active}-${file-extension}
+#  profiles:
+#    active: dev    #根据官网文档，默认拉取的文件为 ${spring.application.name}-${spring.profiles.active}-${file-extension}
 server:
   port: 8057
 
