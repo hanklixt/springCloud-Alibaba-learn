@@ -24,6 +24,8 @@
         <module>hankli-nacos-config-client-load</module>
         <module>sentinel-feign-provider</module>
         <module>sentinel-feign-consumer</module>
+        <module>sentinel-core-example</module>
+        <module>hankli-sentinel-gateway</module>
     </modules>
     <packaging>pom</packaging>
 
