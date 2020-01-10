@@ -13,7 +13,7 @@ public class IpRequestOriginParser implements RequestOriginParser {
     public String parseOrigin(HttpServletRequest httpServletRequest) {
         //简单的获取一下ip
         System.out.println(httpServletRequest.getRemoteHost());
-        
+
 
         return httpServletRequest.getRemoteHost();
     }

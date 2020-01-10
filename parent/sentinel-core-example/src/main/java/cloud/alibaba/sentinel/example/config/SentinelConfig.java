@@ -13,7 +13,9 @@ import javax.annotation.PostConstruct;
 public class SentinelConfig {
     @PostConstruct
     public void init() {
+        //设置url接口熔断报文
         WebCallbackManager.setUrlBlockHandler(new MyBlockHandler());
+        //设置黑白名单，提供应用方名称获取方式，这里使用的是简单获取ip方式
         WebCallbackManager.setRequestOriginParser(new IpRequestOriginParser());
     }
 
