@@ -14,6 +14,7 @@ public class SentinelConfig {
     @PostConstruct
     public void init() {
         WebCallbackManager.setUrlBlockHandler(new MyBlockHandler());
+        WebCallbackManager.setRequestOriginParser(new IpRequestOriginParser());
     }
 
 }
