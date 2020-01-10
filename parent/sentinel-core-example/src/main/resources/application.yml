@@ -5,6 +5,20 @@ spring:
     sentinel:
       transport:
         dashboard: localhost:8080
+      datasource:
+        ds1:
+          file:
+            file: classpath:flowrule.json #文本类型
+            data-type: json              #数据类型
+            rule-type: flow             #限流规则
+        ds2:
+          nacos:
+            server-addr: 127.0.0.1:8848
+            dataId: sentinel-core-example
+            groupId: DEFAULT_GROUP
+            data-type: json
+            rule-type: flow
+
 server:
   port: 18080
 
