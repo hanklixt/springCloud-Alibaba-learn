@@ -1,5 +1,6 @@
 package cloud.alibaba.sentinel.example.controller;
 
+import cloud.alibaba.sentinel.example.config.ExceptionUtil;
 import com.alibaba.csp.sentinel.annotation.SentinelResource;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -18,13 +19,10 @@ public class HelloController {
 
 
     @GetMapping("/resource")
-    @SentinelResource(value = "hello2", blockHandler = "exHandler")
+    @SentinelResource(value = "resource", blockHandler = "exHandler", blockHandlerClass = {ExceptionUtil.class})
     public String resource() {
         return "hello resource";
     }
 
-    public String exHandler() {
-        return "hello exHandler";
-    }
 
 }
